@@ -1,2 +1,5 @@
-# ProjektZaliczeniowyGul
-Projekt prowadzony przez Damian Gul, Adrian Kleyna i Piotr Brac
+# ProjektZaliczeniowyJSGul
+Projekt prowadzony przez:
+- Damian Gul, 
+- Adrian Kleyna,
+- Piotr Brac
