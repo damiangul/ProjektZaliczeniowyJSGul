@@ -9,18 +9,50 @@ body {
   color: white;
 }
 
-header {
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  margin-bottom: 45px;
-  margin-top: 45px;
-}
-
 .content {
   padding: 20px;
   margin-left: 20px;
   text-align: left;
+  font-size: 100%;
+}
+
+/* HEADER */
+header {
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.textInfo {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.textInfo > div {
+  flex-grow: 1;
+}
+
+#logoAnimation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.text_second,
+.text_third,
+.text_fourth {
+  margin-left: 5%;
 }
 
 .logo {
@@ -32,6 +64,7 @@ header {
   margin-top: 10px;
 }
 
+/* NAVBAR */
 ul {
   margin-top: 150%;
 }
@@ -61,7 +94,7 @@ ul {
 }
 
 #icon2:hover {
-  fill: #7d357e;
+  fill: #00a3cc;
   filter: url(#pictureFilter);
   transform: scale(0.9);
 }
@@ -74,7 +107,11 @@ ul {
   position: fixed;
   width: 70px;
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 17, 58, 1), rgba(0, 65, 121, 1));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 17, 58, 1),
+    rgba(0, 65, 121, 1)
+  );
 }
 
 .wraper .sidebar ul li {
@@ -91,11 +128,16 @@ ul {
   margin-left: 70px;
 }
 
-
 article {
   margin: 0;
 }
 
+/* CSS STRONA POD HEADEREM */
+.container {
+  height: 100vh;
+}
+
+/* NASZE SERWISY */
 .services {
   display: grid;
   margin: 0;
@@ -130,33 +172,45 @@ article {
   margin-bottom: 1rem;
 }
 
-
 .serviceInfo > h1:hover {
   animation: animate-h1-lightUp 1s linear forwards;
-
 }
 
 @keyframes animate-h1-lightUp {
-  0%
-  {
+  0% {
     color: white;
   }
 
-  50%
-  {
+  50% {
     color: #00a3cc;
   }
 
-  100%
-  {
+  100% {
     color: white;
   }
+}
+
+/* OPINIE */
+.opinions {
+  height: 100vh;
+  position: relative;
+}
+
+.opinions__h1 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 3rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.opinions__h1:hover {
+}
 
 .slideshow-container {
   max-width: 500px;
   max-height: 500px;
   position: relative;
-  margin: auto;
+  margin: 10% auto;
 }
 
 .prev,
@@ -223,8 +277,4 @@ article {
   to {
     opacity: 1;
   }
-}
-
-section {
-  margin-bottom: 60px;
 }

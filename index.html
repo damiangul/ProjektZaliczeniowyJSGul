@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BKG Team - Web Development Team</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <div class="wrapper">
@@ -212,18 +214,20 @@
 		  
         </ul>
       </div>
-
       <div class="content">
-        <header class="header">
-          <!-- particle js -->
+        <header class="header">     
+          <div class="textInfo">
+            <div class="text_first"></div>
+            <div class="text_second"></div>
+            <div class="text_third"></div>
+            <div class="text_fourth"></div>
+            <div class="text_fifth"></div>
+          </div>
+          <div id="logoAnimation"></div>
         </header>
-
         <section class="container">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, autem
-            quisquam. Nostrum aliquam dolor vitae, consequatur voluptas hic?
-            Earum ad asperiores ex sint atque exercitationem aliquid! Quo
-            facilis illo nulla!
+            TODO: Umieszczamy tutaj coś?
           </p>
         </section>
 
@@ -274,41 +278,41 @@
         </section>
 
         <section class="opinions">
-
+          <h1 class="opinions__h1">Zaufali nam nie jedni</h1>
           <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="./images/opinions/1.jpg" style="width:100%">
-          </div>
+            <div class="mySlides fade">
+              <img src="./images/opinions/1.jpg" style="width:100%">
+            </div>
 
       
-          <div class="mySlides fade">
-          <img src="./images/opinions/2.jpg" style="width:100%">
+            <div class="mySlides fade">
+              <img src="./images/opinions/2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./images/opinions/3.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="./images/opinions/4.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="./images/opinions/5.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
           </div>
 
-          <div class="mySlides fade">
-          <img src="./images/opinions/3.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides fade">
-          <img src="./images/opinions/4.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides fade">
-          <img src="./images/opinions/5.jpg" style="width:100%">
-          </div>
-          
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-          </div>
         </section>
 		
 
@@ -321,7 +325,10 @@
       </div>
     </div>
 	
-	
+  
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/particles.min.js"></script>
     <script src="js/slide.js"></script> 
+    <script src="js/header.js"></script> 
   </body>
 </html>
