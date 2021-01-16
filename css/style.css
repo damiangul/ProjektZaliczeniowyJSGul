@@ -32,9 +32,8 @@ header {
   margin-top: 10px;
 }
 
-.biglogod {
-  width: 300px;
-  height: 300px;
+ul {
+  margin-top: 150%;
 }
 
 #icon1 {
@@ -46,14 +45,28 @@ header {
   transform: scale(1);
 }
 
+#icon2 {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 1px;
+  fill: white;
+  transition: 0.3s;
+  transform: scale(0.3);
+}
+
 #icon1:hover {
   fill: #00a3cc;
   filter: url(#pictureFilter);
   transform: scale(1.3);
 }
 
+#icon2:hover {
+  fill: #7d357e;
+  filter: url(#pictureFilter);
+  transform: scale(0.9);
+}
+
 .wrapper {
-  display: flex;
   position: relative;
 }
 
@@ -74,9 +87,10 @@ header {
 }
 
 .wrapper .content {
-  width: 100%;
+  width: calc(100%-70px);
   margin-left: 70px;
 }
+
 
 article {
   margin: 0;
@@ -137,4 +151,80 @@ article {
   {
     color: white;
   }
+
+.slideshow-container {
+  max-width: 500px;
+  max-height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  transition: background-color 0.7s;
+  border-radius: 0 1px 1px 0;
+  user-select: none;
+  font-weight: bold;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #0f4eaf;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 1px;
+  background-color: white;
+  border-radius: 10%;
+  display: inline-block;
+  transition: background-color 0.7s;
+}
+
+.active,
+.dot:hover {
+  background-color: #0f4eaf;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  margin-bottom: 60px;
 }
