@@ -290,3 +290,37 @@ article {
     opacity: 1;
   }
 }
+
+body.animation {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.my-path {
+  fill: none;
+  stroke: white;
+  stroke-width: 75;
+  position: absolute;
+  transform: translate(+130%, -300%) scale(2);
+}
+
+.segment {
+  width: 0px;
+  height: 3%;
+  background-color: white;
+  float: left;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 35%;
+  margin-left: 0%;
+}
+
+#lineDrawing {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

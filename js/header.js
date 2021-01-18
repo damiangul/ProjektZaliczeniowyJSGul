@@ -33,7 +33,7 @@ const addLetter = () => {
       addLetter();
     }, 400);
   }
-  setTimeout(addLetter, 75);
+  setTimeout(addLetter, 30);
 };
 
-addLetter();
+setTimeout(addLetter, 2900);
