@@ -36,4 +36,4 @@ const addLetter = () => {
   setTimeout(addLetter, 30);
 };
 
-setTimeout(addLetter, 2900);
+setTimeout(addLetter, 2400);

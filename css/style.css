@@ -152,7 +152,6 @@ article {
 }
 
 @media (max-width: 1200px) {
-
   .serviceGallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -160,7 +159,6 @@ article {
     font-family: Roboto, Helvetica, sans-serif;
     font-size: 80%;
   }
-
 }
 
 .serviceInfo {
@@ -289,6 +287,12 @@ article {
   to {
     opacity: 1;
   }
+}
+
+/* Start animation */
+
+.startAnimation {
+  height: 100vh;
 }
 
 body.animation {

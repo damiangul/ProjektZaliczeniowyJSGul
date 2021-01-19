@@ -2,7 +2,7 @@ let lineDrawing = anime({
   targets: "#lineDrawing .lines path",
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: "easeInOutSine",
-  duration: 2000,
+  duration: 1500,
   delay: function (el, i) {
     return i * 250;
   },
@@ -13,7 +13,7 @@ let lineDrawing = anime({
 let animation = anime({
   targets: ".segment",
   width: "25%",
-  duration: 2000,
+  duration: 1500,
   easing: "linear",
   delay: function (el, i, l) {
     return i * 100;
@@ -25,4 +25,4 @@ let animation = anime({
 setTimeout(() => {
   $(".startAnimation").hide("slow");
   $("body").removeClass("animation");
-}, 2300);
+}, 1800);
