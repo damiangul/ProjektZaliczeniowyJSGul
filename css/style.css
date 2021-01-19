@@ -153,11 +153,7 @@ article {
 
 @media (max-width: 1200px) {
   .serviceGallery {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1rem;
-    font-family: Roboto, Helvetica, sans-serif;
-    font-size: 80%;
   }
 }
 
@@ -169,7 +165,7 @@ article {
 
 .serviceInfo > img {
   align-self: center;
-  width: 80%;
+  width: 70%;
   margin-bottom: 2rem;
 }
 
@@ -211,9 +207,6 @@ article {
   font-size: 3rem;
   margin-top: 20px;
   text-align: center;
-}
-
-.opinions__h1:hover {
 }
 
 .slideshow-container {
