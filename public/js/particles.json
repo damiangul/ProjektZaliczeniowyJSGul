@@ -20,7 +20,7 @@
         "nb_sides": 5
       },
       "image": {
-        "src": "images/header/BKGparticle.png",
+        "src": "public/images/header/BKGparticle.png",
         "width": 100,
         "height": 100
       }
