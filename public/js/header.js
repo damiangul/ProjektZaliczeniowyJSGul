@@ -11,7 +11,7 @@ const txt = [
 ];
 const divs = $(".textInfo > div");
 
-particlesJS.load("logoAnimation", "js/particles.json", () =>
+particlesJS.load("logoAnimation", "public/js/particles.json", () =>
   console.log("Particle załadowało się poprawnie")
 );
 
