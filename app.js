@@ -44,15 +44,13 @@ app.get("/contact", (req, res) => {
 //after post request
 app.post("/send", (req, res) => {
   const output = `
-    <p>You have a new contact request</p>
-    <h3>Contact Details</h3>
+    <p>Nowa wiadomość ze strony!</p>
+    <h3>Szczegóły</h3>
     <ul>  
-      <li>Name: ${req.body.name}</li>
-      <li>Company: ${req.body.company}</li>
+      <li>Imie: ${req.body.name}</li>
       <li>Email: ${req.body.email}</li>
-      <li>Phone: ${req.body.phone}</li>
     </ul>
-    <h3>Message</h3>
+    <h3>Treść</h3>
     <p>${req.body.message}</p>
   `;
 
@@ -82,7 +80,7 @@ app.post("/send", (req, res) => {
     if (error) {
       return console.log(error);
     }
-    res.render("contact", { msg: "Email has been sent" });
+    res.render("contact", { msg: "Wiadomość wysłana!" });
   });
 });
 
