@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BKG Team - Web Development Team</title>
     <link rel="stylesheet" href="public/css/style.css" />
-      <link rel="icon" type="image/png" href="public/images/faviconBKG.png">
+    <link href="../public/css/lightgallery.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="public/images/faviconBKG.png">
   </head>
   <body class="animation">
-    <section class="startAnimation">
+    {{!-- <section class="startAnimation">
 
       <div class="loading">
         <div class="segment"></div>
@@ -49,7 +50,7 @@
           </svg>
           </div>
   
-    </section>
+    </section> --}}
 
     <div class="wrapper">
       <div class="sidebar">
@@ -256,23 +257,38 @@
 
         </ul>
       </div>
-      <div class="content">
-        <section class="projects_info">
-          <!-- Wstęp do projektów -->
-        </section>
-        <section class="project_gallery">
-          <!-- Galeria do projektów. -->
-        </section>
-        <footer>
-          <!-- Nasz adres. Adresy email. Numery telefonów. Link do Githuba, itp... -->
-        </footer>
+      <h1 class="our-projects">Nasze dotychczas skończone projekty</h1>
+      <div class="gallery-body">
+        <div class="gallery-container">
+          <div class="image-gallery" id="lightgallery">
+            <a href="../public/images/gallery/pierwszyProjekt.png" class="img-1" data-sub-html="<h4>Blog dla Youtuberki</h4><p>Prosty projekt zrobiony przy użyciu WordPressa</p>">
+              <ion-icon name="expand-outline"></ion-icon>
+            </a>
+            <a href="../public/images/gallery/drugiProjekt.png" class="img-2" data-sub-html="<h4>Strona dla przychodni</h4><p>Strona wykonana na zamówienie dla Uniwersyteckiego Centrum Klinicznego GUMed</p>">
+              <ion-icon name="expand-outline"></ion-icon>
+            </a>
+            <a href="../public/images/gallery/trzeciProjekt.png" class="img-3" data-sub-html="<h4>Blog dla grupy kolarskiej</h4><p>Strona wykonana dla grupy Kolarskiej przy użyciu Wordpressa</p>">
+              <ion-icon name="expand-outline"></ion-icon>
+            </a>
+            <a href="../public/images/gallery/czwartyProjekt.png" class="img-4" data-sub-html="<h4>Blog dla grupy kolarskiej</h4><p>Strona wykonana dla grupy Kolarskiej przy użyciu Wordpressa</p>">
+              <ion-icon name="expand-outline"></ion-icon>
+            </a>
+            <a href="../public/images/gallery/piatyProjekt.png" class="img-5" data-sub-html="<h4>Strona sklepu muzycznego</h4><p>Strona wykonana dla lokalnego sklepu muzycznego</p>">
+              <ion-icon name="expand-outline"></ion-icon>
+            </a>
+            <a href="../public/images/gallery/szóstyProjekt.png" class="img-6" data-sub-html="<h4>Strona sklepu muzycznego</h4><p>Strona wykonana dla lokalnego sklepu muzycznego</p>">
+              <ion-icon name="expand-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="public/js/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
     <script src="public/js/startAnimation.js"></script>
-    <script src="public/js/jquery-3.5.1.min.js"></script>
-    <script src="public/js/particles.min.js"></script>
-    <script src="public/js/slide.js"></script>
-    <script src="public/js/header.js"></script>
+    <script src="../public/js/lightGallery/lightgallery.min.js"></script>
+    <script src="../public/js/lightGallery/lg-zoom.js"></script>
+    <script src="../public/js/lightGallery/gallery.js"></script>
   </body>
 </html>
