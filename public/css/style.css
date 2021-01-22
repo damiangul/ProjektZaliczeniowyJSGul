@@ -466,3 +466,13 @@ footer a {
   width: 100%;
   padding-bottom: 20px;
 }
+
+.tech {
+  height: 20%;
+  width: 20%;
+}
+
+.tech:nth-child(2) > * {
+  display: inline-block;
+  width: 48%;
+}
