@@ -34,7 +34,7 @@ app.get("/skills", (req, res) => {
 });
 
 app.get("/ourProjects", (req, res) => {
-  res.render("index");
+  res.render("ourProjects");
 });
 
 app.get("/contact", (req, res) => {
