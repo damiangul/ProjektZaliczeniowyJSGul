@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BKG Team - Web Development Team</title>
     <link rel="stylesheet" href="public/css/style.css" />
+      <link rel="stylesheet" href="public/css/formstyle.css">
+      <link rel="icon" type="image/png" href="public/images/faviconBKG.png">
   </head>
   <body class="animation">
     <section class="startAnimation">
@@ -266,44 +268,53 @@
       </div>
 
       <div class="content">
-        <h1>KONTAKT</h1>
-        <section>
-           <div >
-            <div class="contact">
-                <h3>Email Us</h3>
-                {{msg}}
-                <form method="POST" action="send">
-                <p>
-                    <label>Name</label>
-                    <input type="text" name="name">
-                </p>
-                <p>
-                    <label>Company</label>
-                    <input type="text" name="company">
-                </p>
-                <p>
-                    <label>Email Address</label>
-                    <input type="email" name="email">
-                </p>
-                <p>
-                    <label>Phone Number</label>
-                    <input type="text" name="phone">
-                </p>
-                <p class="full">
-                    <label>Message</label>
-                    <textarea name="message" rows="5"></textarea>
-                </p>
-                <p class="full">
-                    <button type="submit">Submit</button>
-                </p>
-                </form>
-            </div>
-            </div>
-            </div>
-            </section>
-        <footer>
-          <!-- Nasz adres. Adresy email. Numery telefonów. Link do Githuba, itp... -->
-        </footer>
+
+          <section>
+                <div class="page">
+                    <img src="public/images/callcenter.png" class="callcenterPic">
+                    <div class="formContainer">
+                        <div class="left">
+                            <div class="formContactLabel">Formularz kontaktowy</div>
+                            <div class="formInfo">
+                                Jeśli chcecsz zadać nam jakieś pytanie nie krępuj się!
+                            </div>
+                        </div>
+                        <div class="right">
+                            <svg viewBox="0 0 320 300">
+                                <defs>
+                                    <linearGradient
+                                            inkscape:collect="always"
+                                            id="linearGradient"
+                                            x1="13"
+                                            y1="193.49992"
+                                            x2="307"
+                                            y2="193.49992"
+                                            gradientUnits="userSpaceOnUse">
+                                        <stop
+                                                style="stop-color:#ff00ff;"
+                                                offset="0"
+                                                id="stop876" />
+                                        <stop
+                                                style="stop-color:#ff0000;"
+                                                offset="1"
+                                                id="stop878" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143"
+                                      style="fill: none; stroke: url(#linearGradient);; stroke-width: 4; stroke-dasharray: 240 1386 "/>
+                            </svg>
+                            <div class="form">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                                <label for="message">Treść</label>
+                                <input type="text" name="message" id="message">
+                                <input type="submit" id="submit">
+                                {{msg}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </section>
       </div>
     </div>
 
@@ -313,5 +324,6 @@
     <script src="public/js/particles.min.js"></script>
     <script src="public/js/slide.js"></script>
     <script src="public/js/header.js"></script>
+    <script src="public/js/formAnimation.js"></script>
   </body>
 </html>

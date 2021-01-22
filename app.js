@@ -82,7 +82,7 @@ app.post("/send", (req, res) => {
     if (error) {
       return console.log(error);
     }
-    res.render("contact", { msg: "Email has been sent" });
+    res.render("contact", { msg: "Wiadomość została wysłana" });
   });
 });
 
