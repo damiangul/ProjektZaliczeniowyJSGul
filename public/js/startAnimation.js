@@ -25,4 +25,5 @@ let animation = anime({
 setTimeout(() => {
   $(".startAnimation").hide("slow");
   $("body").removeClass("animation");
+  $(".nav__mobile").attr("class", "nav__mobile");
 }, 1800);
