@@ -34,7 +34,7 @@ app.get("/skills", (req, res) => {
 });
 
 app.get("/ourProjects", (req, res) => {
-  res.render("index");
+  res.render("ourProjects");
 });
 
 app.get("/contact", (req, res) => {
@@ -46,9 +46,7 @@ app.post("/send", (req, res) => {
   const output = `
     <p>Masz nową prośbę o kontakt</p>
     <h3>Szczegóły</h3>
-    <ul>  
-      <li>Email: ${req.body.email}</li>
-    </ul>
+    <p>Email: ${req.body.email}</p>
     <h3>Wiadomość:</h3>
     <p>${req.body.message}</p>
   `;
@@ -83,4 +81,4 @@ app.post("/send", (req, res) => {
   });
 });
 
-app.listen(3000, () => console.log("Server started..."));
+app.listen(process.env.PORT || 3000);
