@@ -44,15 +44,12 @@ app.get("/contact", (req, res) => {
 //after post request
 app.post("/send", (req, res) => {
   const output = `
-    <p>You have a new contact request</p>
-    <h3>Contact Details</h3>
+    <p>Masz nową prośbę o kontakt</p>
+    <h3>Szczegóły</h3>
     <ul>  
-      <li>Name: ${req.body.name}</li>
-      <li>Company: ${req.body.company}</li>
       <li>Email: ${req.body.email}</li>
-      <li>Phone: ${req.body.phone}</li>
     </ul>
-    <h3>Message</h3>
+    <h3>Wiadomość:</h3>
     <p>${req.body.message}</p>
   `;
 

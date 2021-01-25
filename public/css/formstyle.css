@@ -9,6 +9,12 @@
     background: #2D2F36;
 }
 
+.content {
+    padding: 0px!important;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 100%;
+}
 
 body {
     font-family: 'Inter UI', sans-serif;
@@ -142,11 +148,24 @@ input::-moz-focus-inner {
     height: 550px;
     position: relative;
     top: 35px;
-    margin-top: -110px;
+
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .callcenterPic {
         height: 50%;
     }
+}
+
+@media (max-height: 720px) {
+    .callcenterPic {
+        height: 50%;
+    }
+}
+
+.confirmSended {
+    font-family: Roboto, Helvetica, SansSerif;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
 }
