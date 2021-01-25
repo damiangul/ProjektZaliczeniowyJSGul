@@ -183,10 +183,10 @@ a {
   color: white;
 }
 
-.nav__mobile__list svg {
-  fill: white;
-  height: 30px;
-  width: 30px;
+.nav__mobile__list i {
+  color: white;
+  /* height: 30px;
+  width: 30px; */
   display: inline-block;
 }
 
