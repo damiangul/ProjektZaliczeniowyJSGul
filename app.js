@@ -44,13 +44,10 @@ app.get("/contact", (req, res) => {
 //after post request
 app.post("/send", (req, res) => {
   const output = `
-    <p>Nowa wiadomość ze strony!</p>
+    <p>Masz nową prośbę o kontakt</p>
     <h3>Szczegóły</h3>
-    <ul>  
-      <li>Imie: ${req.body.name}</li>
-      <li>Email: ${req.body.email}</li>
-    </ul>
-    <h3>Treść</h3>
+    <p>Email: ${req.body.email}</p>
+    <h3>Wiadomość:</h3>
     <p>${req.body.message}</p>
   `;
 
@@ -80,7 +77,7 @@ app.post("/send", (req, res) => {
     if (error) {
       return console.log(error);
     }
-    res.render("contact", { msg: "Wiadomość wysłana!" });
+    res.render("contact", { msg: "Wiadomość została wysłana" });
   });
 });
 
