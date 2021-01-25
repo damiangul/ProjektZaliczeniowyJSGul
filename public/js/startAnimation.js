@@ -27,3 +27,47 @@ setTimeout(() => {
   $("body").removeClass("animation");
   $(".nav__mobile").attr("class", "nav__mobile");
 }, 1800);
+
+let skillsB = anime({
+  loop: true,
+  targets: ".skillanimation",
+  rotate: {
+    value: 720,
+    duration: 2000,
+    easing: "easeInOutSine",
+  },
+  scale: {
+    value: 1.2,
+    duration: 4000,
+    easing: "easeInOutQuart",
+  },
+  direction: "alternate",
+  delay: 3000,
+});
+
+let textNode = document.querySelector(".text");
+
+textNode.innerHTML = textNode.innerText
+  .split(" ")
+  .map((word) => {
+    return `<span>${word}</span>`;
+  })
+  .join("&nbsp;");
+
+let animeText = anime
+  .timeline({ loop: true })
+  .add({
+    targets: ".text span",
+    opacity: [0, 1],
+    scale: [20, 1],
+    easing: "easeOutCirc",
+    duration: 2000,
+    delay: (e, i) => 600 * i,
+  })
+  .add({
+    targets: ".text",
+    opacity: [1, 0],
+    scale: [1, 5],
+    easing: "easeOutExpo",
+    duration: 2000,
+  });
