@@ -42,7 +42,7 @@ let skillsB = anime({
     easing: "easeInOutQuart",
   },
   direction: "alternate",
-  delay: 3000,
+  delay: 4000,
 });
 
 let textNode = document.querySelector(".text");
@@ -62,7 +62,7 @@ let animeText = anime
     scale: [20, 1],
     easing: "easeOutCirc",
     duration: 2000,
-    delay: (e, i) => 600 * i,
+    delay: (e, i) => 1000 * i,
   })
   .add({
     targets: ".text",
