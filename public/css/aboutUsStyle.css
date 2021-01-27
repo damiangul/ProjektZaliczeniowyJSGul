@@ -1,0 +1,21 @@
+.teamMembers {
+    display: grid;
+    text-align: center;
+
+}
+
+.contentTeam {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 450px));
+    grid-gap: 0px;
+    align-items: center;
+    justify-items: center;
+}
+
+.contentTeam > .member1Pic > img {
+    max-height: 500px;
+}
+
+
+
+
