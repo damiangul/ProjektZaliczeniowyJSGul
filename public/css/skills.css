@@ -1,0 +1,74 @@
+/*skills*/
+body {
+  overflow-y: hidden;
+}
+
+.node,
+.laravel,
+.javascript,
+.jquery,
+.anime {
+  height: 30%;
+  width: 30%;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.skillsDIV {
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "text text text"
+    "anime nothing javascript"
+    "laravel jquery node";
+}
+
+.text {
+  margin-top: 5%;
+  margin-right: 5%;
+  text-align: center;
+  grid-area: text;
+  font-size: 3rem;
+  font-family: Roboto, Helvatica, sans-serif;
+}
+
+.node {
+  grid-area: node;
+}
+
+.javascript {
+  grid-area: javascript;
+}
+
+.laravel {
+  grid-area: laravel;
+}
+
+.jquery {
+  grid-area: jquery;
+}
+
+.anime {
+  grid-area: anime;
+}
+
+@media (max-width: 1200px) {
+  .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .text {
+    font-size: 12px;
+  }
+}
