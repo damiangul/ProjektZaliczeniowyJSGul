@@ -186,8 +186,6 @@ a {
 
 .nav__mobile__list i {
   color: white;
-  /* height: 30px;
-  width: 30px; */
   display: inline-block;
 }
 
@@ -268,6 +266,12 @@ a {
   transform: translate(-150%);
 }
 
+.shortInfo__first img {
+  height: 90%;
+  width: 90%;
+  object-fit: contain;
+}
+
 .shortInfo__second {
   transform: scale(0);
 }
@@ -318,6 +322,13 @@ article {
 .services {
   display: grid;
   margin: 0;
+}
+
+.services > h1 {
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: 3rem;
+  margin-top: 20px;
 }
 
 .serviceGallery {
@@ -781,5 +792,37 @@ footer a {
   .gallery-body {
     margin-left: 0;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .container {
+    height: 160vh;
+  }
+
+  .shortInfo__first {
+    transform: translate(-300%);
+  }
+
+  .shortInfo__third {
+    transform: translate(-300%);
+  }
+
+  .shortInfo {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+  }
+
+  .shortInfo > * {
+    height: 25%;
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .shortInfo__second .shortInfoImgWrapper img {
+    height: 35%;
+    width: 35%;
   }
 }
