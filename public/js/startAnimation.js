@@ -57,17 +57,20 @@ textNode.innerHTML = textNode.innerText
 let animeText = anime
   .timeline({ loop: true })
   .add({
+    delay: 3000,
+  })
+  .add({
     targets: ".text span",
     opacity: [0, 1],
-    scale: [20, 1],
+    scale: [5, 1],
     easing: "easeOutCirc",
     duration: 2000,
-    delay: (e, i) => 1000 * i,
+    delay: (e, i) => 500 * i,
   })
   .add({
     targets: ".text",
     opacity: [1, 0],
-    scale: [1, 5],
+    scale: [1, 1.5],
     easing: "easeOutExpo",
     duration: 2000,
   });
