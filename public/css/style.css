@@ -315,12 +315,12 @@ article {
   margin: 0;
 }
 
-.services {
+.ourTeam {
   display: grid;
   margin: 0;
 }
 
-.serviceGallery {
+.teamMembers {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-gap: 1rem;
@@ -329,33 +329,33 @@ article {
 }
 
 @media (max-width: 1200px) {
-  .serviceGallery {
+  .teamMembers {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 
-.serviceInfo {
+.memberInfo {
   display: flex;
   flex-flow: column;
   padding: 2rem;
 }
 
-.serviceInfo > img {
+.memberInfo > img {
   align-self: center;
   width: 70%;
   margin-bottom: 2rem;
 }
 
-.serviceInfo > h1 {
-  margin: 1rem 1 rem 1rem 1rem;
+.memberInfo > h1 {
+  margin: 1rem;
 }
 
-.serviceInfo > p {
+.memberInfo > p {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.serviceInfo > h1:hover {
+.memberInfo > h1:hover {
   animation: animate-h1-lightUp 1s linear forwards;
 }
 

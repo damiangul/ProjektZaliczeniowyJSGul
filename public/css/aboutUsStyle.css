@@ -1,21 +1,115 @@
+article {
+    margin: 0;
+}
+
+.ourTeam {
+    display: grid;
+    margin: 0;
+    margin-left: -20px;
+}
+
 .teamMembers {
     display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 600px));
+    grid-gap: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 80%;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .teamMembers {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 600px));
+    }
+}
+
+
+.bannerText {
+    color: white;
+    font-size: 3rem;
+    padding: 16px 32px;
+    font-family: Roboto, Helvatica, sans-serif;
+    font-style: italic;
+}
+
+.memberInfo {
+    display: flex;
+    flex-flow: column;
+    padding: 2rem;
+}
+
+.memberInfo > img {
+    align-self: center;
+    margin-bottom: 2rem;
+    transition: 0.5s all ease-in-out;
+}
+
+.memberInfo > h1 {
+    margin: 0.5rem;
     text-align: center;
-
+    font-size: 2rem;
 }
 
-.contentTeam {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 450px));
-    grid-gap: 0px;
-    align-items: center;
-    justify-items: center;
+.memberInfo > p {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.contentTeam > .member1Pic > img {
-    max-height: 500px;
+.memberInfo > h1:hover {
+    animation: animate-h1-lightUp 1s linear forwards;
 }
 
+.memberInfo > img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes animate-h1-lightUp {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: #133e88;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+.banner {
+    margin-top: 2rem;
+    position: relative;
+}
+
+.bannerPic {
+    margin-top: 1rem;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: 4s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.hiddenBannerText {
+    transition: 4s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner:hover .bannerPic {
+    opacity: 0.2;
+}
+
+.banner:hover .hiddenBannerText {
+    opacity: 1;
+}
 
 
 
