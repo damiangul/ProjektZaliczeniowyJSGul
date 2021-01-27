@@ -13,15 +13,36 @@ $numberOfDays.text(Math.floor(timeDifferenceInDays));
 
 $(document).on("scroll", function () {
   const windowHeight = $(window).height();
+  const windowsWidth = $(window).width();
   const scrollValue = $(this).scrollTop();
 
-  const shortInfosFromTop = $firstInfo.offset().top;
-  const shortInfosHeight = $firstInfo.outerHeight();
+  const shortInfoFirstFromTop = $firstInfo.offset().top;
+  const shortInfoFirstHeight = $firstInfo.outerHeight();
 
-  if (scrollValue > shortInfosFromTop + shortInfosHeight - windowHeight) {
-    $firstInfo.addClass("activeElement");
-    $thirdInfo.addClass("activeElement");
-    setTimeout(addClassToThirdInfo, 200);
+  const shortInfoSecondFromTop = $secondInfo.offset().top;
+  const shortInfoSecondHeight = $secondInfo.outerHeight();
+
+  const shortInfoThirdFromTop = $thirdInfo.offset().top;
+  const shortInfoThirdHeight = $thirdInfo.outerHeight();
+
+  if (windowsWidth <= 840) {
+    if (scrollValue > shortInfoFirstFromTop + shortInfoFirstHeight - windowHeight) {
+      $firstInfo.addClass("activeElement");
+    }
+
+    if (scrollValue > shortInfoSecondFromTop + shortInfoSecondHeight - windowHeight) {
+      $secondInfo.addClass("showElement");
+    } 
+    
+    if (scrollValue > shortInfoThirdFromTop + shortInfoThirdHeight - windowHeight) {
+      $thirdInfo.addClass("activeElement");
+    }
+  } else {
+    if (scrollValue > shortInfoFirstFromTop + shortInfoFirstHeight - windowHeight) {
+      $firstInfo.addClass("activeElement");
+      $thirdInfo.addClass("activeElement");
+      setTimeout(addClassToThirdInfo, 200);
+    }
   }
 });
 
