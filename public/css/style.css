@@ -329,6 +329,11 @@ article {
   font-family: "Source Code Pro", monospace;
   font-size: 3rem;
   margin-top: 20px;
+  border-bottom: white 2px solid;
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .serviceGallery {
@@ -395,6 +400,11 @@ article {
   font-size: 3rem;
   margin-top: 20px;
   text-align: center;
+  border-bottom: white 2px solid;
+  position: relative;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .slideshow-container {
@@ -680,6 +690,7 @@ footer a {
   margin-bottom: 30px;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
   .gallery-container {
     max-width: 110rem;
@@ -700,7 +711,70 @@ footer a {
   }
 }
 
-/* MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+  .opinions__h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .container {
+    height: 160vh;
+  }
+
+  .shortInfo__first {
+    transform: translate(-300%);
+  }
+
+  .shortInfo__third {
+    transform: translate(-300%);
+  }
+
+  .shortInfo {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+  }
+
+  .shortInfo > * {
+    height: 25%;
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .shortInfo__second .shortInfoImgWrapper img {
+    height: 35%;
+    width: 35%;
+  }
+
+  .services > h1 {
+    font-size: 2rem;
+  }
+  
+  .opinions {
+    height: 55vh;
+  }
+}
+
+@media screen and (max-width: 740px) { 
+  .inner_footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .opinions__h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .services > h1 {
+    font-size: 1.4rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .nav__mobile {
     display: block;
@@ -737,44 +811,12 @@ footer a {
     padding: 0;
     margin-left: 0;
   }
-}
 
-@media screen and (max-width: 740px) { 
-  .inner_footer {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-}
-
-@media screen and (max-width: 840px) {
-  .container {
-    height: 160vh;
+  .textInfo {
+    font-size: 1.4rem;
   }
 
-  .shortInfo__first {
-    transform: translate(-300%);
-  }
-
-  .shortInfo__third {
-    transform: translate(-300%);
-  }
-
-  .shortInfo {
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
-  }
-
-  .shortInfo > * {
-    height: 25%;
-    width: 80%;
-    font-size: 15px;
-  }
-
-  .shortInfo__second .shortInfoImgWrapper img {
-    height: 35%;
-    width: 35%;
+  .opinions {
+    height: 40vh;
   }
 }
