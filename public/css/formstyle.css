@@ -27,7 +27,7 @@ body {
     place-content: center;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 30px);
+    /*height: calc(100vh - 30px);*/
     width: calc(100vw - 20px);
     overflow: hidden;
 }
@@ -106,15 +106,6 @@ body {
     width: 320px;
 }
 
-@media (max-width: 767px) {
-    .right {
-        flex-shrink: 0;
-        height: 100%;
-        width: 100%;
-        max-height: 450px;
-    }
-
-}
 
 .form {
     margin: 40px;
@@ -176,9 +167,10 @@ input::-moz-focus-inner {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .callcenterPic {
-        height: 40%;
+        height: 450px;
+        transition: ease-in-out 2s;
     }
 }
 
