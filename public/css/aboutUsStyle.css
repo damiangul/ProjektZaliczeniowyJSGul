@@ -80,6 +80,7 @@ article {
 .banner {
     margin-top: 2rem;
     position: relative;
+    overflow: hidden;
 }
 
 .bannerPic {
@@ -124,6 +125,14 @@ article {
 
     .bannerText {
         font-size: 3rem;
+    }
+
+    .hiddenBannerText {
+        opacity: 1;
+    }
+    
+    .bannerPic {
+        opacity: 0.2;
     }
 }
 
