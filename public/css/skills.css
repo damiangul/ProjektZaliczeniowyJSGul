@@ -8,7 +8,7 @@ body {
 .javascript,
 .jquery,
 .anime {
-  height: 30%;
+  height: 40%;
   width: 30%;
   margin-top: 2%;
   margin-left: 20%;
@@ -34,6 +34,7 @@ body {
   grid-area: text;
   font-size: 3rem;
   font-family: Roboto, Helvatica, sans-serif;
+  font-weight: bold;
 }
 
 .node {
@@ -65,10 +66,26 @@ body {
   .text {
     font-size: 15px;
   }
+  .node,
+  .laravel,
+  .javascript,
+  .jquery,
+  .anime {
+    height: 50%;
+    width: 50%;
+  }
 }
 
 @media (max-width: 500px) {
   .text {
     font-size: 12px;
+  }
+  .node,
+  .laravel,
+  .javascript,
+  .jquery,
+  .anime {
+    height: 60%;
+    width: 60%;
   }
 }
