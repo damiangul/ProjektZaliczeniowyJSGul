@@ -1,3 +1,24 @@
+.animSvg {
+    display: flex;
+    height: 350px;
+    width: 100%;
+}
+
+.anim {
+    display: flex;
+    justify-content: center;
+}
+
+.anim, .anim svg {
+    position: relative;
+    width: 100%;
+
+}
+.anim path {
+    stroke-width: 2;
+}
+
+
 article {
     margin: 0;
 }
