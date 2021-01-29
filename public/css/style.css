@@ -350,6 +350,7 @@ article {
   }
 }
 
+
 .serviceInfo {
   display: flex;
   flex-flow: column;
@@ -363,7 +364,7 @@ article {
 }
 
 .serviceInfo > h1 {
-  margin: 1rem 1 rem 1rem 1rem;
+  margin: 1rem;
 }
 
 .serviceInfo > p {
