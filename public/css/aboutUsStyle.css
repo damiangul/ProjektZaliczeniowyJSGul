@@ -10,7 +10,7 @@ article {
 
 .teamMembers {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 600px));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     grid-gap: 1rem;
     font-family: Roboto, Helvetica, sans-serif;
     font-size: 80%;
@@ -19,9 +19,11 @@ article {
 
 @media (max-width: 1200px) {
     .teamMembers {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 600px));
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
 }
+
+
 
 
 .bannerText {
@@ -40,6 +42,7 @@ article {
 
 .memberInfo > img {
     align-self: center;
+    max-height: 500px;
     margin-bottom: 2rem;
     transition: 0.5s all ease-in-out;
 }
@@ -88,12 +91,14 @@ article {
     opacity: 1;
     display: block;
     height: auto;
-    transition: 4s ease-in-out;
+    transition: 1s ease-in-out;
     backface-visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hiddenBannerText {
-    transition: 4s ease-in-out;
+    transition: 1s ease-in-out;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -111,5 +116,37 @@ article {
     opacity: 1;
 }
 
+@media (max-width: 480px) {
+
+    .memberInfo > img {
+        height: auto;
+    }
+
+    .memberInfo {
+        grid-row-gap: 10px;
+    }
+
+    .bannerText {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .teamMembers {
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+
+    .memberInfo > img {
+        height: 40%;
+    }
+
+    .memberInfo {
+        grid-row-gap: 10px;
+    }
+
+    .bannerText {
+        font-size: 2rem;
+    }
+}
 
 
