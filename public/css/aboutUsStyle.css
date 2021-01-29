@@ -5,7 +5,6 @@ article {
 .ourTeam {
     display: grid;
     margin: 0;
-    margin-left: -20px;
 }
 
 .teamMembers {
@@ -22,9 +21,6 @@ article {
         grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
 }
-
-
-
 
 .bannerText {
     color: white;
@@ -102,7 +98,7 @@ article {
     opacity: 0;
     position: absolute;
     top: 50%;
-    left: 46%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;

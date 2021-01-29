@@ -27,9 +27,13 @@ body {
     place-content: center;
     justify-content: center;
     align-items: center;
-    /*height: calc(100vh - 30px);*/
     width: calc(100vw - 20px);
     overflow: hidden;
+}
+
+.formWrapper {
+    display: flex;
+    justify-content: center;
 }
 
 
