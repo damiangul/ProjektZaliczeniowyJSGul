@@ -1,7 +1,11 @@
 .animSvg {
-    display: flex;
+    /* display: flex;
     height: 350px;
-    width: 100%;
+    width: 100%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .anim {
@@ -26,6 +30,7 @@ article {
 .ourTeam {
     display: grid;
     margin: 0;
+    position: relative;
 }
 
 .teamMembers {
@@ -35,11 +40,17 @@ article {
     font-family: Roboto, Helvetica, sans-serif;
     font-size: 80%;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 @media (max-width: 1200px) {
     .teamMembers {
         grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+
+    .animSvg {
+        transform: translate(-50%, -50%) rotate(90deg);
     }
 }
 
@@ -132,6 +143,12 @@ article {
 
 .banner:hover .hiddenBannerText {
     opacity: 1;
+}
+
+@media (max-width: 780px) {
+    .animSvg {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
